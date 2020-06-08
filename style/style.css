@@ -1,0 +1,22 @@
+html, body {
+  margin: 0 auto;
+  background-color: red;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px; }
+
+header {
+  text-align: center;
+  max-height: 100px;
+  background-color: blue; }
+
+header img {
+  margin-top: 10px;
+  max-height: 80px; }
+
+#d1 {
+  background-color: blue;
+  height: 50vh;
+  width: 20vw; }
+  @media (min-width: 600px) {
+    #d1 {
+      background-color: yellow; } }
