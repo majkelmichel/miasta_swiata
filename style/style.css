@@ -25,6 +25,11 @@ header img {
   grid-template-areas: "opis" "galeria" "mapa";
   grid-template-columns: 100% 100% 100%;
   grid-template-rows: 33% 34% 33%; }
+  @media (min-width: 900px) {
+    .container {
+      grid-template-areas: "opis galeria" "mapa mapa";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%; } }
 
 .opis {
   grid-area: opis;

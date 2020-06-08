@@ -1,10 +1,7 @@
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
+@mixin for-tablet {
   @media (min-width: 900px) { @content; }
 }
 @mixin for-desktop-up {
@@ -45,6 +42,13 @@ header img {
 	grid-template-areas: "opis" "galeria" "mapa";
 	grid-template-columns: 100% 100% 100%;
 	grid-template-rows: 33% 34% 33%;
+	@include for-tablet {
+		grid-template-areas: 
+			"opis galeria"
+			"mapa mapa";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+	}
 }
 
 .opis {
