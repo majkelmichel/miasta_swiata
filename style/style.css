@@ -1,44 +1,133 @@
-html, body {
+body {
   margin: 0 auto;
   background-color: red;
   font-family: 'Lato', sans-serif;
-  font-size: 26px; }
+}
 
 header {
   text-align: center;
   height: 5vh;
-  background-color: blue; }
+  background-color: #0F0F0F;
+}
+@media (max-width: 899px) and (orientation: landscape) {
+  header {
+    height: 5vw;
+  }
+}
+@media (min-width: 900px) and (orientation: landscape) {
+  header {
+    height: 5vw;
+  }
+}
+
+#logo {
+  height: 5vh;
+}
+@media (max-width: 899px) and (orientation: landscape) {
+  #logo {
+    height: 5vw;
+  }
+}
+@media (min-width: 900px) and (orientation: landscape) {
+  #logo {
+    height: 5vw;
+  }
+}
+
+header img {
+  height: 100%;
+}
 
 footer {
   text-align: center;
-  height: 5vh;
-  background-color: aqua; }
-
-header img {
-  margin-top: 0.5vh;
-  max-height: 4vh;
-  margin-bottom: 0.5vh; }
+  min-height: 5vh;
+  background-color: aqua;
+}
 
 .container {
   display: grid;
-  height: 90vh;
+  height: 100vh;
   grid-template-areas: "opis" "galeria" "mapa";
   grid-template-columns: 100% 100% 100%;
-  grid-template-rows: 33% 34% 33%; }
-  @media (min-width: 900px) {
-    .container {
-      grid-template-areas: "opis galeria" "mapa mapa";
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 50% 50%; } }
+  grid-template-rows: 33% 34% 33%;
+}
+@media (max-width: 899px) and (orientation: portrait) {
+  .container {
+    grid-template-areas: "opis" "galeria" "mapa";
+    grid-template-columns: 100% 100% 100%;
+    grid-template-rows: 33% 34% 33%;
+  }
+}
+@media (max-width: 899px) and (orientation: landscape) {
+  .container {
+    grid-template-areas: "opis galeria" "mapa mapa";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
+@media (min-width: 900px) and (orientation: portrait) {
+  .container {
+    grid-template-areas: "opis" "galeria" "mapa";
+    grid-template-columns: 100% 100% 100%;
+    grid-template-rows: 33% 34% 33%;
+  }
+}
+@media (min-width: 900px) and (orientation: landscape) {
+  .container {
+    grid-template-areas: "opis galeria" "mapa mapa";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    height: 180vh;
+    grid-template-areas: "opis" "galeria" "mapa";
+    grid-template-columns: 100% 100% 100%;
+    grid-template-rows: 60vh 60vh 60vh;
+  }
+}
 
 .opis {
   grid-area: opis;
-  background-color: lightblue; }
+  background-color: lightblue;
+}
 
 .galeria {
   grid-area: galeria;
-  background-color: blue; }
+  background-color: blue;
+}
 
 .mapa {
   grid-area: mapa;
-  background-color: darkblue; }
+  background-color: darkblue;
+}
+
+.welcome {
+  width: 100%;
+  height: 80vh;
+  max-height: 800px;
+  background-image: url("../img/tokyo-welcome.jpg");
+  z-index: 4;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.button {
+  position: absolute;
+  top: 47.5%;
+  left: 42.5%;
+  height: 5%;
+  width: 15%;
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+  border: 1px solid #FFF;
+  z-index: 6;
+}
