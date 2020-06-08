@@ -6,17 +6,34 @@ html, body {
 
 header {
   text-align: center;
-  max-height: 100px;
+  height: 5vh;
   background-color: blue; }
 
-header img {
-  margin-top: 10px;
-  max-height: 80px; }
+footer {
+  text-align: center;
+  height: 5vh;
+  background-color: aqua; }
 
-#d1 {
-  background-color: blue;
-  height: 50vh;
-  width: 20vw; }
-  @media (min-width: 600px) {
-    #d1 {
-      background-color: yellow; } }
+header img {
+  margin-top: 0.5vh;
+  max-height: 4vh;
+  margin-bottom: 0.5vh; }
+
+.container {
+  display: grid;
+  height: 90vh;
+  grid-template-areas: "opis" "galeria" "mapa";
+  grid-template-columns: 100% 100% 100%;
+  grid-template-rows: 33% 34% 33%; }
+
+.opis {
+  grid-area: opis;
+  background-color: lightblue; }
+
+.galeria {
+  grid-area: galeria;
+  background-color: blue; }
+
+.mapa {
+  grid-area: mapa;
+  background-color: darkblue; }

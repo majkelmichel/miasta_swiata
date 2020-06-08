@@ -11,8 +11,8 @@
   @media (min-width: 1200px) { @content; }
 }
 
-$logo-height: 100px;
-
+$logo-height: 5vh;
+$footer-height: 5vh;
 
 html, body {
 	margin: 0 auto;
@@ -23,20 +23,41 @@ html, body {
 
 header {
 	text-align: center;
-	max-height: $logo-height;
+	height: $logo-height;
 	background-color: blue;
-}
-header img {
-	margin-top: 10px;
-	max-height: $logo-height - 20px;
 }
 
-#d1 {
+footer {
+	text-align: center;
+	height: $footer-height;
+	background-color: aqua;
+}
+
+header img {
+	margin-top: $logo-height / 10;
+	max-height: $logo-height - $logo-height / 5;
+	margin-bottom: $logo-height / 10;
+}
+
+.container {
+	display: grid;
+	height: 100vh - $logo-height - $footer-height;
+	grid-template-areas: "opis" "galeria" "mapa";
+	grid-template-columns: 100% 100% 100%;
+	grid-template-rows: 33% 34% 33%;
+}
+
+.opis {
+	grid-area: opis;
+	background-color: lightblue;
+}
+
+.galeria {
+	grid-area: galeria;
 	background-color: blue;
-	height: 50vh;
-	width: 20vw;
-	
-	@include for-tablet-portrait-up {
-		background-color: yellow;
-	}
+}
+
+.mapa {
+	grid-area: mapa;
+	background-color: darkblue;
 }
