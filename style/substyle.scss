@@ -16,7 +16,6 @@
 
 * {
   box-sizing: border-box;
-	color: white;
 }
 
 html {
@@ -27,6 +26,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	background-color: #DDD;
+	color: white;
 }
 
 a {
@@ -35,6 +35,7 @@ a {
 }
 
 header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	height: 5vh;
@@ -43,17 +44,19 @@ header {
 		height: 10vh;
 	}
 	@include phone-side {
-		height: 5vw;
+		height: 10vh;
 	}
 	@include tablet-side {
-		height: 5vw;
+		height: 5vh;
+	}
+	@include for-desktop {
+		height: 7vh;
 	}
 }
 
 .menu {
 	position: relative;
 	height: 100%;
-	width: 5vw;
 }
 
 menu, #submenu {
@@ -86,13 +89,7 @@ menu a:hover, #submenu a:hover {
 }
 
 #logo {
-	height: inherit;
-	@include phone-side {
-		height: 5vw;
-	}
-	@include tablet-side {
-		height: 5vw;
-	}
+	height: 100%;
 }
 
 header img {
@@ -133,14 +130,13 @@ main {
 	grid-template-columns: 20% 60% 20%;
 	width: 100vw;
 	background-color: white;
-}
-
-.video {
-	margin-left: 10%;
-	width: 80%;
+	@include phone-up {
+		grid-template-columns: 0% 100% 0%;
+	}
 }
 
 .yt-container {
+	margin-top: 2vh;
     position: relative;
     width: 100%;
     height: 0;
@@ -161,4 +157,48 @@ main {
 
 .right {
 	background: linear-gradient(90deg, white, #AAA);
+}
+
+section {
+	color: black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+	font-size: 4em;
+	margin: auto;
+}
+
+h3 {
+	font-size: 2em;
+	margin: auto;
+}
+
+article {
+	width: 80%;
+	margin: 1vh 10% 5vh 10%;
+}
+
+table {
+	margin: 2vh 0vh 0vh 0vh;
+	width: 100%;
+	border: 2px black solid;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td {
+	border: 2px black solid;
+}
+
+input, textarea, select {
+	margin: 0.5vh 0 0.5vh 0;
+	width: 100%;
+	height: 4vh;
 }
