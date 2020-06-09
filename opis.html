@@ -10,7 +10,7 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<header>
+		<header id="top">
 			<div class="menu" onclick="showMenu()">
 				<a href="#"><img src="img/menu.png"></a>
 			</div>
@@ -87,23 +87,26 @@
 				<article>
 					<h2>Ankieta</h2>
 					<form>
-					<h3>Imię</h3>
-						<input type="text" placeholder="Imię">
+					<label for="imie"><h3>Imię</h3></label>
+						<input type="text" placeholder="Imię" name="imie" required>
+						<h3>Jak oceniasz miasto?</h3>
+						<select name="ocena">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<h3>Co sądzisz o mieście</h3>
+						<textarea style="height: 50vh;" required></textarea>
+						<input type="submit">
 					</form>
-					<h3>Jak oceniasz miasto?</h3>
-					<select name="ocena">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-					<h3>Co sądzisz o mieście</h3>
-					<textarea style="height: 50vh;"></textarea>
+					
 				</article>
 			</section>
 			<div class="right"></div>
 		</main>
+		<div id="scroll-up"><a href="#top"><img src="img/back-arrow.png" style="max-width: 50px;" alt="Wróć na górę"></a></div>
 		<footer>
 			Michał Zawadzki<br>2tc
 		</footer>
