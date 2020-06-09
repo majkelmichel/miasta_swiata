@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tokio</title>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/substyle.css">
+		<link rel="shortcut icon" href="img/tokyo-herb.png">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="menu" onclick="showMenu()">
+				<a href="#"><img src="img/menu.png"></a>
+			</div>
+			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png"></a></div>
+			<div class="menu" onclick="showSubMenu()">
+				<a href="#"><img src="img/menu.png"></a>
+			</div>
+		</header>
+		<menu>
+			<a href="opis.html"><div>Info</div></a>
+			<a href="galeria.html"><div>Galeria</div></a>
+			<a href="mapa.html"><div>Mapa</div></a>
+		</menu>
+		<div id="submenu">
+			<a href="#"><div>link</div></a>
+			<a href="#video"><div>Wideo</div></a>
+			<a href="#"><div>link</div></a>
+		</div>
+		<main>
+			<div class="left"></div>
+			<section>
+				<div class="video" id="video">
+					<div class="yt-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/GhbrTJbxWBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt-video"></iframe>
+					</div>
+				</div>
+			</section>
+			<div class="right"></div>
+		</main>
+		<footer>
+			Michał Zawadzki<br>2tc
+		</footer>
+	</body>
+</html>
