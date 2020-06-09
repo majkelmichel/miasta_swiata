@@ -6,17 +6,26 @@
 		<title>Tokio</title>
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<header>
-			<div id="logo"><img src="img/tokyo-herb.png"></div>
-		</header>
-		<div class="welcome">
-			<div class="overlay">
-				<div class="button">Welcome</div>
+			<div class="menu" onclick="showMenu()">
+				<a href="#"><img src="img/menu.png"></a>
 			</div>
+			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png"></a></div>
+			<div class="menu">
+			</div>
+		</header>
+		<menu>
+			<div>Info</div>
+			<div>Galeria</div>
+			<div>Mapa</div>
+		</menu>
+		<div class="welcome">
+			<a href="#blocks"><div class="button">TOKIO</div></a>
 		</div>
-		<div class="container">
+		<div class="container" id="blocks">
 			<div class="opis"></div>
 			<div class="galeria"></div>
 			<div class="mapa"></div>
