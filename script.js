@@ -4,13 +4,13 @@ var subMenuShown = false;
 function showMenu() {
 	if (menuShown) {
 		document.querySelector("menu").style.display = "none";
-		subMenuShown = false;
 		menuShown = false;
 	}
 	else {
 		document.querySelector("menu").style.display = "grid";
 		document.getElementById("submenu").style.display = "none";
 		menuShown = true;
+		subMenuShown = false;
 	}
 }
 
