@@ -173,6 +173,9 @@ h2 {
 	text-align: center;
 	font-size: 4em;
 	margin: auto;
+	@include phone-up {
+		font-size: 3em;
+	}
 }
 
 h3 {
