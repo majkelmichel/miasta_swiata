@@ -51,7 +51,7 @@ header {
   width: 5vw;
 }
 
-menu {
+#menu {
   display: none;
   padding: 0;
   margin: 0;
@@ -61,7 +61,7 @@ menu {
   font-size: 6vh;
 }
 @media (max-width: 899px) and (orientation: portrait) {
-  menu {
+  #menu {
     height: 30vh;
     font-size: 8vh;
     grid-template-columns: 100%;
@@ -69,25 +69,25 @@ menu {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
-  menu {
+  #menu {
     height: 15vh;
     font-size: 12vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
-  menu {
+  #menu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 @media (min-width: 1200px) {
-  menu {
+  #menu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 
-menu div {
+#menu div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@ menu div {
   font-size: inherit;
 }
 
-menu a:hover {
+#menu a:hover {
   background-color: #2F2F2F;
 }
 

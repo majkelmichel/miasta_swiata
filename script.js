@@ -7,7 +7,7 @@ function showMenu() {
 		menuShown = false;
 	}
 	else {
-		document.querySelector("menu").style.display = "grid";
+		document.getElementById("menu").style.display = "grid";
 		document.getElementById("submenu").style.display = "none";
 		menuShown = true;
 		subMenuShown = false;
@@ -20,7 +20,7 @@ function showSubMenu() {
 	}
 	else {
 		document.getElementById("submenu").style.display = "grid";
-		document.querySelector("menu").style.display = "none";
+		document.getElementById("menu").style.display = "none";
 		menuShown = false;
 		subMenuShown = true;
 	}

@@ -59,7 +59,7 @@ header {
 	width: 5vw;
 }
 
-menu {
+#menu {
 	display: none;
 	padding: 0;
 	margin: 0;
@@ -87,7 +87,7 @@ menu {
 	}
 }
 
-menu div {
+#menu div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -96,7 +96,7 @@ menu div {
 	font-size: inherit;
 }
 
-menu a:hover {
+#menu a:hover {
 	background-color: #2F2F2F;
 }
 

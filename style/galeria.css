@@ -36,7 +36,7 @@ header {
   position: relative;
   height: 100%; }
 
-menu, #submenu {
+#menu, #submenu {
   display: none;
   padding: 0;
   margin: 0;
@@ -45,25 +45,25 @@ menu, #submenu {
   grid-template-columns: 33% 34% 33%;
   font-size: 6vh; }
   @media (max-width: 899px) and (orientation: portrait) {
-    menu, #submenu {
+    #menu, #submenu {
       height: 30vh;
       font-size: 8vh;
       grid-template-columns: 100%;
       grid-template-areas: 33% 34% 33%; } }
   @media (max-width: 899px) and (orientation: landscape) {
-    menu, #submenu {
+    #menu, #submenu {
       height: 15vh;
       font-size: 12vh; } }
   @media (min-width: 900px) and (orientation: landscape) {
-    menu, #submenu {
+    #menu, #submenu {
       height: 8vh;
       font-size: 6vh; } }
   @media (min-width: 1200px) {
-    menu, #submenu {
+    #menu, #submenu {
       height: 8vh;
       font-size: 6vh; } }
 
-menu div, #submenu div {
+#menu div, #submenu div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ menu div, #submenu div {
   text-align: center;
   font-size: inherit; }
 
-menu a:hover, #submenu a:hover {
+#menu a:hover, #submenu a:hover {
   background-color: #2F2F2F; }
 
 #logo {

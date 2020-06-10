@@ -11,18 +11,18 @@
 	<body>
 		<header id="top">
 			<div class="menu" onclick="showMenu()">
-				<a href="#"><img src="img/menu.png"></a>
+				<a href="#"><img src="img/menu.png" alt="menu"></a>
 			</div>
-			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png"></a></div>
+			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png" alt="logo"></a></div>
 			<div class="menu" onclick="showSubMenu()">
-				<a href="#"><img src="img/menu.png"></a>
+				<a href="#"><img src="img/menu.png" alt="menu"></a>
 			</div>
 		</header>
-		<menu>
+		<div id="menu">
 			<a href="index.html"><div>Strona główna</div></a>
 			<a href="galeria.html"><div>Media</div></a>
 			<a href="mapa.html"><div>Mapa</div></a>
-		</menu>
+		</div>
 		<div id="submenu">
 			<a href="#video"><div>Film</div></a>
 			<a href="#dane"><div>Dane</div></a>
@@ -86,9 +86,9 @@
 				<article>
 					<h2>Ankieta</h2>
 					<form>
-					<label for="imie"><h3>Imię</h3></label>
+					<label for="imie"><span>Imię</span></label>
 						<input type="text" placeholder="Imię" name="imie" id="imie" required>
-						<h3>Jak oceniasz miasto?</h3>
+						<span>Jak oceniasz miasto?</span>
 						<select name="ocena">
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -96,7 +96,7 @@
 							<option value="4">4</option>
 							<option value="5">5</option>
 						</select>
-						<h3>Co sądzisz o mieście</h3>
+						<span>Co sądzisz o mieście</span>
 						<textarea style="height: 50vh;" required></textarea>
 						<input type="submit">
 					</form>

@@ -58,7 +58,7 @@ header {
 	height: 100%;
 }
 
-menu, #submenu {
+#menu, #submenu {
 	display: none;
 	padding: 0;
 	margin: 0;
@@ -86,7 +86,7 @@ menu, #submenu {
 	}
 }
 
-menu div, #submenu div {
+#menu div, #submenu div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -95,7 +95,7 @@ menu div, #submenu div {
 	font-size: inherit;
 }
 
-menu a:hover, #submenu a:hover {
+#menu a:hover, #submenu a:hover {
 	background-color: #2F2F2F;
 }
 
