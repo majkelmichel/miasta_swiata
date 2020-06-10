@@ -3,7 +3,7 @@ var subMenuShown = false;
 
 function showMenu() {
 	if (menuShown) {
-		document.querySelector("menu").style.display = "none";
+		document.getElementById("menu").style.display = "none";
 		menuShown = false;
 	}
 	else {
