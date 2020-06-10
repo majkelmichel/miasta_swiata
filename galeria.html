@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tokio</title>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style/galeria.css">
+		<link rel="shortcut icon" href="img/tokyo-herb.png">
+	</head>
+	<body>
+		<header id="top">
+			<div class="menu" onclick="showMenu()">
+				<a href="#"><img src="img/menu.png"></a>
+			</div>
+			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png"></a></div>
+			<div class="menu"><img src="img/menu.png" style="opacity: 0;"></div>
+		</header>
+		<menu>
+			<a href="index.html"><div>Strona główna</div></a>
+			<a href="opis.html"><div>Info</div></a>
+			<a href="mapa.html"><div>Mapa</div></a>
+		</menu>
+		<main>
+			<div class="left"></div>
+			<section>
+				<article>
+					<h1>Galeria Zdjęć</h1>
+					<div id="galeria">
+						<img id="img1" src="img/shibuya-tokio.jpg">
+						<img id="img2" src="img/tokio-akihabara.jpg">
+						<img id="img3" src="img/tokio4.jpg">
+						<img id="img4" src="img/tokyo-shrines.jpg">
+						<div id="buttons">
+							<div id="buttonLeft" onclick="switchLeft()">Poprzednie zdjęcie</div>
+							<div id="buttonRight" onclick="switchRight()">Następne zdjęcie</div>
+						</div>
+					</div>
+					<h2>Muzyka</h2>
+					<div id="audio">
+						<ol>
+							<li>
+								Tokyo Drift
+								<audio controls>
+									<source src="media/Tokyo_Drift.mp3" type="audio/mp3">
+									Twoja przeglądarka nie obsługuje muzyki
+								</audio>
+							</li>
+							<li>
+								Imagine Dragons - Tokyo
+								<audio controls>
+									<source src="media/Tokyo_-_Imagine_Dragons.mp3" type="audio/mp3">
+									Twoja przeglądarka nie obsługuje muzyki
+								</audio>
+							</li>
+						</ol>
+					</div>
+				</article>
+			</section>
+			<div class="right"></div>
+		</main>
+		<div id="scroll-up"><a href="#top"><img src="img/back-arrow.png" style="max-width: 50px;" alt="Wróć na górę"></a></div>
+		<footer>
+			Michał Zawadzki<br>2tc
+		</footer>
+		<script src="menu.js"></script>
+		<script src="gallery.js"></script>
+	</body>
+</html>

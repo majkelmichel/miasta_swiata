@@ -13,7 +13,6 @@ function showMenu() {
 		subMenuShown = false;
 	}
 }
-
 function showSubMenu() {
 	if (subMenuShown) {
 		document.getElementById("submenu").style.display = "none";
