@@ -237,4 +237,10 @@ ol {
   margin-top: 6vh;
   margin-bottom: 6vh; }
 
+ul {
+  font-size: 2em; }
+
+ul li:hover {
+  color: #888; }
+
 /*# sourceMappingURL=galeria.css.map */
