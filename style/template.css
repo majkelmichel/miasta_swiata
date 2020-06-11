@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: white; }
 
 html {
   scroll-behavior: smooth; }
@@ -36,7 +37,7 @@ header {
   position: relative;
   height: 100%; }
 
-#menu, #submenu {
+menu, #submenu {
   display: none;
   padding: 0;
   margin: 0;
@@ -45,33 +46,33 @@ header {
   grid-template-columns: 33% 34% 33%;
   font-size: 6vh; }
   @media (max-width: 899px) and (orientation: portrait) {
-    #menu, #submenu {
+    menu, #submenu {
       height: 30vh;
-      font-size: 6vh;
-      grid-template-columns: 100%; } }
+      font-size: 8vh;
+      grid-template-columns: 100%;
+      grid-template-areas: 33% 34% 33%; } }
   @media (max-width: 899px) and (orientation: landscape) {
-    #menu, #submenu {
+    menu, #submenu {
       height: 15vh;
-      font-size: 9vh; } }
+      font-size: 12vh; } }
   @media (min-width: 900px) and (orientation: landscape) {
-    #menu, #submenu {
+    menu, #submenu {
       height: 8vh;
       font-size: 6vh; } }
   @media (min-width: 1200px) {
-    #menu, #submenu {
+    menu, #submenu {
       height: 8vh;
       font-size: 6vh; } }
 
-#menu div, #submenu div {
+menu div, #submenu div {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
-  font-size: inherit;
-  height: 100%; }
+  font-size: inherit; }
 
-#menu a:hover, #submenu a:hover {
+menu a:hover, #submenu a:hover {
   background-color: #2F2F2F; }
 
 #logo {
@@ -83,8 +84,7 @@ header img {
 footer {
   text-align: center;
   min-height: 5vh;
-  background-color: #0F0F0F;
-  color: white; }
+  background-color: #0F0F0F; }
 
 .button {
   color: white;
@@ -116,15 +116,6 @@ main {
   @media (max-width: 899px) and (orientation: portrait) {
     main {
       grid-template-columns: 0% 100% 0%; } }
-  @media (max-width: 899px) and (orientation: landscape) {
-    main {
-      grid-template-columns: 0% 100% 0%; } }
-  @media (min-width: 900px) and (orientation: landscape) {
-    main {
-      grid-template-columns: 0% 100% 0%; } }
-  @media (min-width: 1200px) {
-    main {
-      grid-template-columns: 20% 60% 20%; } }
 
 .yt-container {
   margin-top: 2vh;
@@ -158,83 +149,4 @@ article {
   width: 80%;
   margin: 1vh 10% 5vh 10%; }
 
-h1 {
-  text-align: center;
-  font-size: 5em;
-  margin: auto; }
-
-h2 {
-  text-align: center;
-  font-size: 4em;
-  margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 2vh; }
-  @media (max-width: 899px) and (orientation: portrait) {
-    h2 {
-      font-size: 3em; } }
-
-h3 {
-  font-size: 2em;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 1vh; }
-
-#galeria {
-  height: 100%;
-  margin-top: 4vh; }
-
-#galeria img {
-  max-width: 100%;
-  width: auto; }
-
-#img2, #img3, #img4 {
-  display: none; }
-
-#buttonLeft, #buttonRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 49%;
-  height: 4vh;
-  background-color: #0F0F0F;
-  cursor: pointer;
-  height: 100%; }
-
-#buttonLeft:hover, #buttonRight:hover {
-  background-color: #2F2F2F; }
-
-#buttons {
-  display: flex;
-  justify-content: space-between;
-  height: 5vh; }
-  @media (max-width: 899px) and (orientation: portrait) {
-    #buttons {
-      height: 7vh; } }
-  @media (max-width: 899px) and (orientation: landscape) {
-    #buttons {
-      height: 10vh; } }
-
-#audio {
-  display: flex;
-  justify-content: center;
-  width: 100%; }
-
-#audio audio {
-  width: 100%; }
-
-ol {
-  width: 100%;
-  font-size: 2em;
-  list-style-position: outside; }
-
-.mapa {
-  display: block;
-  margin: auto;
-  max-width: 100%; }
-
-#headermap {
-  margin-top: 6vh;
-  margin-bottom: 6vh; }
-
-/*# sourceMappingURL=galeria.css.map */
+/*# sourceMappingURL=template.css.map */

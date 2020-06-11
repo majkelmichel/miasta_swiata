@@ -69,13 +69,12 @@ header {
 	font-size: 6vh;
 	@include phone-up {
 		height: 30vh;
-		font-size: 8vh;
+		font-size: 6vh;
 		grid-template-columns: 100%;
-		grid-template-areas: 33% 34% 33%;
 	}
 	@include phone-side {
 		height: 15vh;
-		font-size: 12vh;
+		font-size: 9vh;
 	}
 	@include tablet-side {
 		height: 8vh;
@@ -94,6 +93,7 @@ header {
 	color: white;
 	text-align: center;
 	font-size: inherit;
+	height: 100%;
 }
 
 #menu a:hover, #submenu a:hover {

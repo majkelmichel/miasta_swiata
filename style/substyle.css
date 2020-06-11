@@ -63,15 +63,14 @@ header {
 @media (max-width: 899px) and (orientation: portrait) {
   #menu, #submenu {
     height: 30vh;
-    font-size: 8vh;
+    font-size: 6vh;
     grid-template-columns: 100%;
-    grid-template-areas: 33% 34% 33%;
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
   #menu, #submenu {
     height: 15vh;
-    font-size: 12vh;
+    font-size: 9vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
@@ -94,6 +93,7 @@ header {
   color: white;
   text-align: center;
   font-size: inherit;
+  height: 100%;
 }
 
 #menu a:hover, #submenu a:hover {
