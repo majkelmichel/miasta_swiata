@@ -1,22 +1,27 @@
+/* line 17, style.scss */
 * {
   box-sizing: border-box;
   color: white;
 }
 
+/* line 22, style.scss */
 html {
   scroll-behavior: smooth;
 }
 
+/* line 26, style.scss */
 body {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
 }
 
+/* line 31, style.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* line 36, style.scss */
 header {
   width: 100%;
   display: flex;
@@ -25,32 +30,38 @@ header {
   background-color: #0F0F0F;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 36, style.scss */
   header {
     height: 10vh;
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 36, style.scss */
   header {
     height: 15vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 36, style.scss */
   header {
     height: 8vh;
   }
 }
 @media (min-width: 1200px) {
+  /* line 36, style.scss */
   header {
     height: 7vh;
   }
 }
 
+/* line 56, style.scss */
 .menu {
   position: relative;
   height: 100%;
   width: 5vw;
 }
 
+/* line 62, style.scss */
 #menu {
   display: none;
   padding: 0;
@@ -61,6 +72,7 @@ header {
   font-size: 6vh;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 62, style.scss */
   #menu {
     height: 30vh;
     font-size: 8vh;
@@ -69,24 +81,28 @@ header {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 62, style.scss */
   #menu {
     height: 15vh;
     font-size: 12vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 62, style.scss */
   #menu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 @media (min-width: 1200px) {
+  /* line 62, style.scss */
   #menu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 
+/* line 90, style.scss */
 #menu div {
   display: flex;
   justify-content: center;
@@ -96,24 +112,29 @@ header {
   font-size: inherit;
 }
 
+/* line 99, style.scss */
 #menu a:hover {
   background-color: #2F2F2F;
 }
 
+/* line 103, style.scss */
 #logo {
   height: 100%;
 }
 
+/* line 107, style.scss */
 header img {
   height: 100%;
 }
 
+/* line 111, style.scss */
 footer {
   text-align: center;
   min-height: 5vh;
   background-color: #0F0F0F;
 }
 
+/* line 117, style.scss */
 .container {
   display: grid;
   height: 100vh;
@@ -122,6 +143,7 @@ footer {
   grid-template-rows: 33% 34% 33%;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 117, style.scss */
   .container {
     grid-template-areas: "opis" "galeria" "mapa";
     grid-template-columns: 100% 100% 100%;
@@ -129,6 +151,7 @@ footer {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 117, style.scss */
   .container {
     grid-template-areas: "opis galeria" "mapa mapa";
     grid-template-columns: 50% 50%;
@@ -136,6 +159,7 @@ footer {
   }
 }
 @media (min-width: 900px) and (orientation: portrait) {
+  /* line 117, style.scss */
   .container {
     grid-template-areas: "opis" "galeria" "mapa";
     grid-template-columns: 100% 100% 100%;
@@ -143,6 +167,7 @@ footer {
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 117, style.scss */
   .container {
     grid-template-areas: "opis galeria" "mapa mapa";
     grid-template-columns: 50% 50%;
@@ -150,6 +175,7 @@ footer {
   }
 }
 @media (min-width: 1200px) {
+  /* line 117, style.scss */
   .container {
     height: 300vh;
     grid-template-areas: "opis" "galeria" "mapa";
@@ -158,6 +184,7 @@ footer {
   }
 }
 
+/* line 155, style.scss */
 .opis {
   display: flex;
   align-items: center;
@@ -168,6 +195,7 @@ footer {
   max-height: 1080px;
 }
 
+/* line 165, style.scss */
 .galeria {
   display: flex;
   align-items: center;
@@ -178,6 +206,7 @@ footer {
   background-size: cover;
 }
 
+/* line 175, style.scss */
 .mapa {
   display: flex;
   align-items: center;
@@ -188,6 +217,7 @@ footer {
   background-size: cover;
 }
 
+/* line 185, style.scss */
 .welcome {
   display: flex;
   align-items: center;
@@ -199,26 +229,31 @@ footer {
   z-index: 4;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 185, style.scss */
   .welcome {
     height: 90vh;
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 185, style.scss */
   .welcome {
     height: 85vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 185, style.scss */
   .welcome {
     height: 92vh;
   }
 }
 @media (min-width: 1200px) {
+  /* line 185, style.scss */
   .welcome {
     height: 93vh;
   }
 }
 
+/* line 208, style.scss */
 .button {
   color: white;
   margin: auto;
@@ -232,6 +267,7 @@ footer {
   z-index: 6;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 208, style.scss */
   .button {
     font-size: 4em;
     widows: 7ex;
@@ -239,9 +275,12 @@ footer {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 208, style.scss */
   .button {
     font-size: 4em;
     widows: 7ex;
     border-width: 8px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

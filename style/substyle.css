@@ -1,11 +1,14 @@
+/* line 17, substyle.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 21, substyle.scss */
 html {
   scroll-behavior: smooth;
 }
 
+/* line 25, substyle.scss */
 body {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
@@ -13,11 +16,13 @@ body {
   color: white;
 }
 
+/* line 32, substyle.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* line 37, substyle.scss */
 header {
   width: 100%;
   display: flex;
@@ -26,31 +31,37 @@ header {
   background-color: #0F0F0F;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 37, substyle.scss */
   header {
     height: 10vh;
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 37, substyle.scss */
   header {
     height: 15vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 37, substyle.scss */
   header {
     height: 8vh;
   }
 }
 @media (min-width: 1200px) {
+  /* line 37, substyle.scss */
   header {
     height: 7vh;
   }
 }
 
+/* line 57, substyle.scss */
 .menu {
   position: relative;
   height: 100%;
 }
 
+/* line 62, substyle.scss */
 #menu, #submenu {
   display: none;
   padding: 0;
@@ -61,6 +72,7 @@ header {
   font-size: 6vh;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 62, substyle.scss */
   #menu, #submenu {
     height: 30vh;
     font-size: 6vh;
@@ -68,24 +80,28 @@ header {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 62, substyle.scss */
   #menu, #submenu {
     height: 15vh;
     font-size: 9vh;
   }
 }
 @media (min-width: 900px) and (orientation: landscape) {
+  /* line 62, substyle.scss */
   #menu, #submenu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 @media (min-width: 1200px) {
+  /* line 62, substyle.scss */
   #menu, #submenu {
     height: 8vh;
     font-size: 6vh;
   }
 }
 
+/* line 89, substyle.scss */
 #menu div, #submenu div {
   display: flex;
   justify-content: center;
@@ -96,24 +112,29 @@ header {
   height: 100%;
 }
 
+/* line 99, substyle.scss */
 #menu a:hover, #submenu a:hover {
   background-color: #2F2F2F;
 }
 
+/* line 103, substyle.scss */
 #logo {
   height: 100%;
 }
 
+/* line 107, substyle.scss */
 header img {
   height: 100%;
 }
 
+/* line 111, substyle.scss */
 footer {
   text-align: center;
   min-height: 5vh;
   background-color: #0F0F0F;
 }
 
+/* line 117, substyle.scss */
 .button {
   color: white;
   margin: auto;
@@ -127,6 +148,7 @@ footer {
   z-index: 6;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 117, substyle.scss */
   .button {
     font-size: 4em;
     widows: 7ex;
@@ -134,6 +156,7 @@ footer {
   }
 }
 @media (max-width: 899px) and (orientation: landscape) {
+  /* line 117, substyle.scss */
   .button {
     font-size: 4em;
     widows: 7ex;
@@ -141,6 +164,7 @@ footer {
   }
 }
 
+/* line 140, substyle.scss */
 main {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -148,11 +172,13 @@ main {
   background-color: white;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 140, substyle.scss */
   main {
     grid-template-columns: 0% 100% 0%;
   }
 }
 
+/* line 150, substyle.scss */
 .yt-container {
   margin-top: 2vh;
   position: relative;
@@ -161,6 +187,7 @@ main {
   padding-bottom: 56.25%;
 }
 
+/* line 158, substyle.scss */
 .yt-video {
   position: absolute;
   top: 0;
@@ -169,45 +196,54 @@ main {
   height: 100%;
 }
 
+/* line 166, substyle.scss */
 .left {
   background: linear-gradient(90deg, #AAA, white);
 }
 
+/* line 170, substyle.scss */
 .right {
   background: linear-gradient(90deg, white, #AAA);
 }
 
+/* line 174, substyle.scss */
 section {
   color: black;
 }
 
+/* line 178, substyle.scss */
 h1 {
   text-align: center;
   font-size: 5em;
   margin: auto;
 }
 
+/* line 184, substyle.scss */
 h2 {
   text-align: center;
   font-size: 4em;
   margin: auto;
 }
 @media (max-width: 899px) and (orientation: portrait) {
+  /* line 184, substyle.scss */
   h2 {
     font-size: 3em;
   }
 }
 
+/* line 193, substyle.scss */
 span {
   font-size: 2em;
   margin: auto;
 }
 
+/* line 198, substyle.scss */
 article {
   width: 80%;
   margin: 1vh 10% 5vh 10%;
 }
 
+/* line 203, substyle.scss */
 table {
   margin: 2vh 0vh 0vh 0vh;
   width: 100%;
@@ -216,21 +252,25 @@ table {
   border-collapse: collapse;
 }
 
+/* line 211, substyle.scss */
 td {
   border: 2px black solid;
 }
 
+/* line 215, substyle.scss */
 input, textarea, select {
   margin: 0.5vh 0 0.5vh 0;
   width: 100%;
   height: 4vh;
 }
 
+/* line 221, substyle.scss */
 button {
   width: 100%;
   height: 4vh;
 }
 
+/* line 226, substyle.scss */
 #scroll-up {
   position: fixed;
   bottom: 5%;
