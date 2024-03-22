@@ -1,4 +1,4 @@
-var menuShown = false;
+let menuShown = false;
 
 function showMenu() {
 	if (menuShown) {

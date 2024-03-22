@@ -86,21 +86,27 @@
 				<article>
 					<h2>Ankieta</h2>
 					<form>
-					<label for="imie"><span>Imię</span></label>
+						<label for="imie"><span>Imię</span></label>
 						<input type="text" placeholder="Imię" name="imie" id="imie" required>
-						<span>Jak oceniasz miasto?</span>
-						<select name="ocena">
+						<label for="ocena"><span>Jak oceniasz miasto?</span></label>
+						<select name="ocena" id="ocena">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
 						</select>
-						<span>Co sądzisz o mieście</span>
-						<textarea style="height: 50vh;" required></textarea>
-						<input type="submit">
+						<label for="opinia"><span>Co sądzisz o mieście</span></label>
+						<textarea id="opinia" style="height: 50vh;" required placeholder="Twoja opinia"></textarea>
+						<div style="display: flex">
+							<input required type="checkbox" name="zgoda" id="zgoda" style="width: min-content; margin: unset; margin-right: 0.5rem">
+							<label for="zgoda" style="margin: auto 0">Wyrażam zgodę na przetwarzanie mojego zapytania</label>
+						</div>
+						<div style="display: flex">
+							<input type="reset" style="margin-right: 0.5rem">
+							<input type="submit">
+						</div>
 					</form>
-					
 				</article>
 			</section>
 			<div class="right"></div>

@@ -1,11 +1,11 @@
-var imgArr = new Array();
+const imgArr = new Array();
 
 imgArr[0] = document.getElementById("img1");
 imgArr[1] = document.getElementById("img2");
 imgArr[2] = document.getElementById("img3");
 imgArr[3] = document.getElementById("img4");
 
-var currentImg = 0;
+let currentImg = 0;
 
 function switchLeft() {
 	if (currentImg == 0) {

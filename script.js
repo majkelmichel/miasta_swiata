@@ -1,5 +1,5 @@
-var menuShown = false;
-var subMenuShown = false;
+let menuShown = false;
+let subMenuShown = false;
 
 function showMenu() {
 	if (menuShown) {
@@ -8,18 +8,19 @@ function showMenu() {
 	}
 	else {
 		document.getElementById("menu").style.display = "grid";
-		document.getElementById("submenu").style.display = "none";
+		document.getElementById("submenu").style.height = "0";
 		menuShown = true;
 		subMenuShown = false;
 	}
 }
 function showSubMenu() {
+	const style = document.getElementById("submenu").style;
 	if (subMenuShown) {
-		document.getElementById("submenu").style.display = "none";
+		style.height = "0";
 		subMenuShown = false;
 	}
 	else {
-		document.getElementById("submenu").style.display = "grid";
+		style.height = "8vh";
 		document.getElementById("menu").style.display = "none";
 		menuShown = false;
 		subMenuShown = true;
