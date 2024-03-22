@@ -7,19 +7,26 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style/galeria.css">
 		<link rel="shortcut icon" href="img/tokyo-herb.png">
+		<link rel="stylesheet" href="style/substyle.css">
 	</head>
 	<body>
-		<header id="top">
-			<div class="menu" onclick="showMenu()">
-				<a href="#"><img src="img/menu.png" alt="menu"></a>
-			</div>
+		<header>
 			<div id="logo"><a href="index.html"><img src="img/tokyo-herb.png" alt="logo"></a></div>
-			<div class="menu"><img src="img/menu.png" style="opacity: 0;" alt=""></div>
+			<div class="menu">
+				<span class="burger" onclick="showSubMenu()">
+					<a href="#"><img src="img/menu.png" alt="menu"></a>
+				</span>
+				<div>
+					<a href="index.html"><div>Strona główna</div></a>
+					<a href="opis.html"><div>Info</div></a>
+					<a href="galeria.html"><div>Media</div></a>
+				</div>
+			</div>
 		</header>
-		<div id="menu">
+		<div class="menu-options-container">
 			<a href="index.html"><div>Strona główna</div></a>
 			<a href="opis.html"><div>Info</div></a>
-			<a href="galeria.html"><div>Galeria</div></a>
+			<a href="galeria.html"><div>Media</div></a>
 		</div>
 		<main>
 			<div class="left"></div>
@@ -43,7 +50,6 @@
 		<footer>
 			Michał Zawadzki<br>2tc
 		</footer>
-		<script src="menu.js"></script>
-		<script src="gallery.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
