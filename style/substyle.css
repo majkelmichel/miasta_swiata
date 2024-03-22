@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: 1s all; }
+  transition: 0.5s all; }
 
 html {
   scroll-behavior: smooth; }
@@ -19,7 +19,11 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem 2rem;
+  position: sticky;
   height: 5vh;
+  top: 0;
+  z-index: 1;
   background-color: #0F0F0F; }
 
 @media (max-width: 899px) and (orientation: portrait) {
@@ -40,6 +44,57 @@ header {
 
 .menu {
   position: relative;
+  height: 100%;
+  flex-grow: 2; }
+
+@media (max-width: 899px) and (orientation: portrait) {
+  .menu {
+    flex-grow: 0; } }
+
+.menu > div {
+  display: flex;
+  flex-grow: 2;
+  gap: 2rem;
+  align-items: center;
+  justify-content: right;
+  font-size: 1.5rem;
+  height: 100%; }
+
+@media (max-width: 899px) and (orientation: portrait) {
+  .menu > div {
+    display: none;
+    height: 0;
+    overflow: hidden; } }
+
+.menu-options-container {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1F1F;
+  align-items: center; }
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .menu-options-container {
+    display: none; } }
+
+.menu-options-container > a {
+  margin: auto;
+  padding: 1rem 0;
+  font-size: 2rem;
+  height: 8vh; }
+
+.menu > div > a:hover {
+  color: #888888; }
+
+.burger {
+  height: 100%;
+  display: none; }
+
+@media (max-width: 899px) and (orientation: portrait) {
+  .burger {
+    display: unset; } }
+
+.burger * {
   height: 100%; }
 
 #submenu {
@@ -101,7 +156,7 @@ header {
 #logo {
   height: 100%; }
 
-header img {
+#logo img {
   height: 100%; }
 
 footer {
@@ -215,3 +270,10 @@ button {
 
 *[id] {
   scroll-margin-top: 80px; }
+
+#opis > p {
+  columns: 2; }
+
+@media (max-width: 899px) and (orientation: portrait) {
+  #opis > p {
+    columns: unset; } }

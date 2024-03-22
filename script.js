@@ -14,14 +14,13 @@ function showMenu() {
 	}
 }
 function showSubMenu() {
-	const style = document.getElementById("submenu").style;
+	const style = document.querySelector(".menu-options-container").style;
 	if (subMenuShown) {
 		style.height = "0";
 		subMenuShown = false;
 	}
 	else {
-		style.height = "8vh";
-		document.getElementById("menu").style.display = "none";
+		style.height = "24vh";
 		menuShown = false;
 		subMenuShown = true;
 	}
