@@ -270,9 +270,6 @@ button {
   bottom: 5%;
   right: 1%; }
 
-*[id] {
-  scroll-margin-top: 80px; }
-
 #opis > p {
   columns: 2; }
 
